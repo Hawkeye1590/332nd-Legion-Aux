@@ -133,9 +133,9 @@ class CfgVehicles
 		hiddenselectionstextures[]=
 		{
 			"332nd_equipment\backpacks\textures\332nd_clone_medic_backpack_co.paa",
-			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"332nd_equipment\backpacks\textures\332nd_backpack_accessories.paa",
 			"",
-			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+			"332nd_equipment\backpacks\textures\332nd_backpack_accessories.paa"
 		};
 	};
 	class 332nd_clone_bag: SWLB_clone_bag
@@ -173,7 +173,7 @@ class CfgVehicles
 			"",
 			"",
 			"",
-			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa"
+			"332nd_equipment\backpacks\textures\332nd_backpack_accessories.paa"
 		};
 	};
 	class 332nd_clone_Mini_RTO_backpack: JLTS_Clone_backpack_RTO
