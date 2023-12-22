@@ -23,7 +23,13 @@ class CfgPatches
 			"332nd_NVG_Marshal_Sun_Visor_P1",
 			"332nd_NVG_Marshal_Sun_Visor_P2",
 			"332nd_NVG_Sun_Visor_p1",
-			"332nd_NVG_Sun_Visor_p2"
+			"332nd_NVG_Sun_Visor_p2",
+			"332nd_NVG_Marshal_Sun_Visor_P2_red",
+			"332nd_NVG_Marshal_Sun_Visor_P2_grey",
+			"332nd_NVG_Marshal_Sun_Visor_P2_orange",
+			"332nd_NVG_Sun_Visor_p2_red",
+			"332nd_NVG_Sun_Visor_p2_grey",
+			"332nd_NVG_Sun_Visor_p2_orange"
 		};
 	};
 	authors[] =
@@ -343,7 +349,7 @@ class CfgWeapons
 	};
 	class 332nd_NVG_Rangefinder_P1: lsd_gar_p1Rangefinder_nvg
 	{
-		displayName="Clone NCO Rangefinder [P1]";
+		displayName="[332nd] Clone NCO Rangefinder [P1]";
 		model="\lsd_equipment_bluefor\nvg\gar\lsd_gar_p1Rangefinder_nvg_on.p3d";
 		modelOptics="-";
 		visionMode[]=
@@ -357,7 +363,7 @@ class CfgWeapons
 	};
 	class 332nd_NVG_Rangefinder_P2: lsd_gar_rangefinder_nvg
 	{
-		displayName="Clone NCO Rangefinder [P2]";
+		displayName="[332nd] Clone NCO Rangefinder [P2]";
 		model="\lsd_equipment_bluefor\nvg\gar\lsd_gar_rangefinder_nvg_on.p3d";
 		modelOptics="-";
 		visionMode[]=
@@ -369,10 +375,56 @@ class CfgWeapons
 		thermalMode[]={0,1};
 		ace_nightvision_border="data\nvg_mask_binos_4096.paa";
 	};
-	class 332nd_NVG_Marshal_Sun_Visor_P2: lsd_gar_p2MarshalCommander_nvg
+	class 332nd_NVG_Marshal_Sun_Visor_P2_red: lsd_gar_p2MarshalCommander_nvg
 	{
-		displayName="Clone Marshal Sun Visor [P2]";
+		displayName="[332nd] Clone Marshal Sun Visor [P2 RED]";
 		model="\lsd_equipment_bluefor\nvg\gar\lsd_gar_p1Rangefinder_nvg_on.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_equipment\nvg\textures\332nd_Sun_Visor_Red.paa",
+			"332nd_equipment\nvg\textures\332nd_Sun_Visor_Red.paa",
+			"332nd_equipment\nvg\textures\332nd_Sun_Visor_Red.paa"
+		};
+		modelOptics="-";
+		visionMode[]=
+		{
+			"Normal",
+			"NVG",
+			"TI"
+		};
+		thermalMode[]={0,1};
+		ace_nightvision_border="data\nvg_mask_binos_4096.paa";
+	};
+	class 332nd_NVG_Marshal_Sun_Visor_P2_grey: lsd_gar_p2MarshalCommander_nvg
+	{
+		displayName="[332nd] Clone Marshal Sun Visor [P2 GREY]";
+		model="\lsd_equipment_bluefor\nvg\gar\lsd_gar_p1Rangefinder_nvg_on.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_equipment\nvg\textures\332nd_Sun_Visor_Grey.paa",
+			"332nd_equipment\nvg\textures\332nd_Sun_Visor_Grey.paa",
+			"332nd_equipment\nvg\textures\332nd_Sun_Visor_Grey.paa"
+		};
+		modelOptics="-";
+		visionMode[]=
+		{
+			"Normal",
+			"NVG",
+			"TI"
+		};
+		thermalMode[]={0,1};
+		ace_nightvision_border="data\nvg_mask_binos_4096.paa";
+	};
+	class 332nd_NVG_Marshal_Sun_Visor_P2_orange: lsd_gar_p2MarshalCommander_nvg
+	{
+		displayName="[332nd] Clone Marshal Sun Visor [P2 ORANGE]";
+		model="\lsd_equipment_bluefor\nvg\gar\lsd_gar_p1Rangefinder_nvg_on.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_equipment\nvg\textures\332nd_Sun_Visor_Orange.paa",
+			"332nd_equipment\nvg\textures\332nd_Sun_Visor_Orange.paa",
+			"332nd_equipment\nvg\textures\332nd_Sun_Visor_Orange.paa"
+		};
 		modelOptics="-";
 		visionMode[]=
 		{
@@ -385,7 +437,8 @@ class CfgWeapons
 	};
 	class 332nd_NVG_Marshal_Sun_Visor_P1: lsd_gar_p1MarshalCommander_nvg
 	{
-		displayName="Clone Marshal Sun Visor [P1]";
+		scope=1
+		displayName="[332nd] Clone Marshal Sun Visor [P1]";
 		model="\lsd_equipment_bluefor\nvg\gar\commander\lsd_gar_p1Commander_nvg";
 		hiddenSelections[]=
 		{
@@ -411,7 +464,7 @@ class CfgWeapons
 	};
 	class 332nd_NVG_Rangefinder_P2: lsd_gar_rangefinder_nvg
 	{
-		displayName="Clone NCO Rangefinder [P2]";
+		displayName="[332nd] Clone NCO Rangefinder [P2]";
 		model="\lsd_equipment_bluefor\nvg\gar\lsd_gar_rangefinder_nvg_on.p3d";
 		modelOptics="-";
 		visionMode[]=
@@ -425,6 +478,7 @@ class CfgWeapons
 	};
 	class 332nd_NVG_Sun_Visor_p1: JLTS_NVG_droid_chip_1
 	{
+		scope=1
 		author="Magic";
 		displayName="[332nd] Clone Sun Visor [P1]";
 		model="\lsd_equipment_bluefor\nvg\gar\commander\lsd_gar_p1Commander_nvg";
@@ -436,8 +490,8 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\lsd_equipment_bluefor\nvg\gar\visor\data\SWLB_clone_nvg_co.paa",
-			"\lsd_equipment_bluefor\nvg\gar\visor\data\SWLB_clone_nvg_co.paa",
+			"332nd_equipment\nvg\textures\332nd_Sun_Visor_Red.paa",
+			"332nd_equipment\nvg\textures\332nd_Sun_Visor_Red.paa",
 			""
 		};
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_ui_ca.paa";
@@ -462,10 +516,10 @@ class CfgWeapons
 			};
 		};
 	};
-	class 332nd_NVG_Sun_Visor_p2: JLTS_NVG_droid_chip_1
+	class 332nd_NVG_Sun_Visor_p2_red: JLTS_NVG_droid_chip_1
 	{
 		author="Magic";
-		displayName="[332nd] Clone Sun Visor [P2]";
+		displayName="[332nd] Clone Sun Visor [P2 RED]";
 		model="\lsd_equipment_bluefor\nvg\gar\commander\lsd_gar_p2Commander_nvg";
 		hiddenSelections[]=
 		{
@@ -475,8 +529,86 @@ class CfgWeapons
 		};
 		hiddenSelectionsTextures[]=
 		{
-			"\lsd_equipment_bluefor\nvg\gar\visor\data\SWLB_clone_nvg_co.paa",
-			"\lsd_equipment_bluefor\nvg\gar\visor\data\SWLB_clone_nvg_co.paa",
+			"332nd_equipment\nvg\textures\332nd_Sun_Visor_Red.paa",
+			"332nd_equipment\nvg\textures\332nd_Sun_Visor_Red.paa",
+			""
+		};
+		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_ui_ca.paa";
+		visionMode[]=
+		{
+			"Normal",
+			"NVG",
+			"TI"
+		};
+		thermalMode[]={0,1};
+		class ItemInfo
+		{
+			type=616;
+			uniformModel="\lsd_equipment_bluefor\nvg\gar\commander\lsd_gar_p2Commander_nvg";
+			modelOff="\lsd_equipment_bluefor\nvg\gar\commander\lsd_gar_p2Commander_nvg";
+			mass=20;
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3"
+			};
+		};
+	};
+	class 332nd_NVG_Sun_Visor_p2_grey: JLTS_NVG_droid_chip_1
+	{
+		author="Magic";
+		displayName="[332nd] Clone Sun Visor [P2 GREY]";
+		model="\lsd_equipment_bluefor\nvg\gar\commander\lsd_gar_p2Commander_nvg";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_equipment\nvg\textures\332nd_Sun_Visor_Grey.paa",
+			"332nd_equipment\nvg\textures\332nd_Sun_Visor_Grey.paa",
+			""
+		};
+		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_ui_ca.paa";
+		visionMode[]=
+		{
+			"Normal",
+			"NVG",
+			"TI"
+		};
+		thermalMode[]={0,1};
+		class ItemInfo
+		{
+			type=616;
+			uniformModel="\lsd_equipment_bluefor\nvg\gar\commander\lsd_gar_p2Commander_nvg";
+			modelOff="\lsd_equipment_bluefor\nvg\gar\commander\lsd_gar_p2Commander_nvg";
+			mass=20;
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2",
+				"camo3"
+			};
+		};
+	};
+	class 332nd_NVG_Sun_Visor_p2_orange: JLTS_NVG_droid_chip_1
+	{
+		author="Magic";
+		displayName="[332nd] Clone Sun Visor [P2 ORANGE]";
+		model="\lsd_equipment_bluefor\nvg\gar\commander\lsd_gar_p2Commander_nvg";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2",
+			"camo3"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_equipment\nvg\textures\332nd_Sun_Visor_Orange.paa",
+			"332nd_equipment\nvg\textures\332nd_Sun_Visor_Orange.paa",
 			""
 		};
 		picture="\MRC\JLTS\characters\CloneArmor\data\ui\Clone_nvg_ui_ca.paa";
