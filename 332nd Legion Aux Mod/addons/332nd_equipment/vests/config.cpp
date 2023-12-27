@@ -593,6 +593,104 @@ class CfgWeapons
 			};
 		};
 	};
+	class 332nd_VEST_ARC: SWLB_clone_officer_armor
+	{
+		displayName="[332nd] ARC Trooper Vest";
+		picture="\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
+		model="\SWLB_clones\SWLB_clone_arc_armor.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_equipment\vests\textures\332nd_ARC_Chestplate.paa",
+			"332nd_equipment\vests\textures\332nd_ARC_Vest.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2"
+			};
+			mass=80;
+			containerClass="Supply70";
+			vestType="Rebreather";
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=6;
+					PassThrough=0.30000001;
+				};
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=6;
+					passThrough=0.30000001;
+				};
+				class Arms
+				{
+					hitpointName="HitArms";
+					armor=4;
+					passThrough=0.30000001;
+				};
+			};
+		};
+	};
+	class 332nd_VEST_ARC_PLT_Marshal: SWLB_clone_officer_armor
+	{
+		displayName="[332nd] Platoon Marshal ARC Vest";
+		picture="\SWLB_clones\data\ui\icon_SWLB_clone_arc_armor_ca.paa";
+		model="\SWLB_clones\SWLB_clone_arc_armor.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"332nd_equipment\vests\textures\332nd_Platoon_Marshal_ARC_Chestplate.paa",
+			"332nd_equipment\vests\textures\332nd_Platoon_Marshal_ARC_Vest.paa"
+		};
+		class ItemInfo: VestItem
+		{
+			uniformModel="\SWLB_clones\SWLB_clone_arc_armor.p3d";
+			hiddenSelections[]=
+			{
+				"camo1",
+				"camo2"
+			};
+			mass=80;
+			containerClass="Supply70";
+			vestType="Rebreather";
+			class HitpointsProtectionInfo
+			{
+				class Chest
+				{
+					HitpointName="HitChest";
+					armor=6;
+					PassThrough=0.30000001;
+				};
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=6;
+					passThrough=0.30000001;
+				};
+				class Arms
+				{
+					hitpointName="HitArms";
+					armor=4;
+					passThrough=0.30000001;
+				};
+			};
+		};
+	};
 	class 332nd_VEST_NCO_1: SWLB_clone_kama_armor
 	{
 		displayName="[332nd] NCO Vest [1]";
