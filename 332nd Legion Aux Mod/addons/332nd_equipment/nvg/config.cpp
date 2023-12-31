@@ -463,20 +463,6 @@ class CfgWeapons
 		thermalMode[]={0,1};
 		ace_nightvision_border="data\nvg_mask_binos_4096.paa";
 	};
-	class 332nd_NVG_Rangefinder_P2: lsd_gar_rangefinder_nvg
-	{
-		displayName="[332nd] Clone NCO Rangefinder [P2]";
-		model="\lsd_equipment_bluefor\nvg\gar\lsd_gar_rangefinder_nvg_on.p3d";
-		modelOptics="-";
-		visionMode[]=
-		{
-			"Normal",
-			"NVG",
-			"TI"
-		};
-		thermalMode[]={0,1};
-		ace_nightvision_border="data\nvg_mask_binos_4096.paa";
-	};
 	class 332nd_NVG_Sun_Visor_p1: JLTS_NVG_droid_chip_1
 	{
 		scope=1
