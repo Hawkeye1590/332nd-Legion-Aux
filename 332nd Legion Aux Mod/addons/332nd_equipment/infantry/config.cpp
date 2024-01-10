@@ -394,39 +394,21 @@ class CfgWeapons
                 };
 			};
 	};
-	class 332nd_ARC_Helmet: ls_gar_arc_helmet
+	class 332nd_GI_ARC_helmet: ls_gar_arc_helmet
 	{
+		author="Magika";
+		scopecurator=2;
 		scope=2;
 		displayName="[332nd] ARC Trooper Helmet";
-		hiddenSelections[]=
-		{
-			"camo1",
-			"visor",
-			"illum"
-		};
 		hiddenSelectionsTextures[]=
 		{
-			"332nd_equipment\infantry\textures\ARC_helmets\332nd_ARC_Helmet.paa",
+			"\332nd_equipment\infantry\textures\ARC_helmets\332nd_ARC_Helmet.paa",
 			"ls_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
-			"332nd_equipment\infantry\textures\ARC_helmets\332nd_ARC_Helmet.paa"
+			"ls_armor_bluefor\helmet\gar\arc\data\helmet_co.paa"
 		};
-		model="\ls_armor_bluefor\helmet\gar\arc\ls_gar_arc_helmet.p3d";
-		subItems[]={};
-		class ItemInfo: ItemInfo
-		{
-			mass=10;
-			uniformModel="\ls_armor_bluefor\helmet\gar\arc\ls_gar_arc_helmet.p3d";
-			hiddenSelections[]=
-			{
-				"camo1",
-				"visor",
-				"illum"
-			};
-			allowedSlots[]={801,901,701,605};
-			modelSides[]={6};
-			ace_hearing_protection=1;
-			ace_hearing_lowerVolume=0.40000001;
-			class HitpointsProtectionInfo
+		ace_hearing_protection=1;
+		ace_hearing_lowerVolume=0.40000001;
+		class HitpointsProtectionInfo
             {
                 class Head
                 {
@@ -441,7 +423,6 @@ class CfgWeapons
                     passThrough=0.30000001;
                 };
 			};
-		};
 	};
 	
 	//Uniforms

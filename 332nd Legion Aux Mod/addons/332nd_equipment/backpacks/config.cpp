@@ -11,6 +11,8 @@ class CfgPatches
 			"332nd_clone_heavy_backpack",
 			"332nd_clone_medic_backpack",
 			"332nd_clone_RTO_backpack",
+			"332nd_clone_RTO_Medic_backpack",
+			"332nd_clone_ARC_backpack",
 			"332nd_clone_Mini_RTO_backpack",
 			"332nd_clone_bag",
 		};
@@ -174,6 +176,49 @@ class CfgVehicles
 			"",
 			"",
 			"332nd_equipment\backpacks\textures\332nd_backpack_accessories.paa"
+		};
+	};
+	class 332nd_clone_RTO_Medic_backpack: JLTS_Clone_backpack_RTO
+	{
+		author="Magika";
+		scopecurator=2;
+		scope=2;
+		displayName="[332nd] Clone RTO Medic Backpack";
+		maximumLoad=400;
+		model="\SWLB_equipment\backpacks\swlb_clone_backpack.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenselectionstextures[]=
+		{
+			"332nd_equipment\backpacks\textures\332nd_clone_medic_backpack_co.paa",
+			"",
+			"",
+			"",
+			"332nd_equipment\backpacks\textures\332nd_backpack_accessories.paa"
+		};
+	};
+	class 332nd_clone_ARC_backpack: JLTS_Clone_backpack_RTO
+	{
+		author="Magika";
+		scopecurator=2;
+		scope=2;
+		displayName="[332nd] Clone ARC Backpack";
+		maximumLoad=300;
+		model="\SWLB_equipment\backpacks\SWLB_clone_arc_backpack.p3d";
+		picture="\SWLB_equipment\backpacks\data\ui\icon_SWLB_clone_arc_backpack_ca.paa";
+		hiddenSelections[]=
+		{
+			"camo1"
+		};
+		hiddenSelectionsTextures[]=
+		{
+			"\SWLB_equipment\backpacks\data\SWLB_clone_arc_backpack_co.paa"
 		};
 	};
 	class 332nd_clone_Mini_RTO_backpack: JLTS_Clone_backpack_RTO
