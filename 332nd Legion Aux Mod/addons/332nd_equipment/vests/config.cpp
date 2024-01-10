@@ -749,33 +749,33 @@ class CfgWeapons
 			"\SWLB_clones\data\heavy_accessories_co.paa",
 			"\SWLB_clones\data\heavy_accessories_co.paa"
 		};
-	};
-	class ItemInfo: VestItem
-	{
-		mass=80;
-		containerClass="Supply70";
-		vestType="Rebreather";
-		class HitpointsProtectionInfo
-		{
-			class Chest
+		class ItemInfo: VestItem
 			{
-				HitpointName="HitChest";
-				armor=6;
-				PassThrough=0.30000001;
+			mass=80;
+			containerClass="Supply70";
+			vestType="Rebreather";
+			class HitpointsProtectionInfo
+				{
+					class Chest
+					{
+						HitpointName="HitChest";
+						armor=6;
+						PassThrough=0.30000001;
+					};
+					class Legs
+					{
+						hitpointName="HitLegs";
+						armor=6;
+						passThrough=0.30000001;
+					};
+					class Arms
+					{
+						hitpointName="HitArms";
+						armor=4;
+						passThrough=0.30000001;
+					};
+				};
 			};
-			class Legs
-			{
-				hitpointName="HitLegs";
-				armor=6;
-				passThrough=0.30000001;
-			};
-			class Arms
-			{
-				hitpointName="HitArms";
-				armor=4;
-				passThrough=0.30000001;
-			};
-		};
 	};
 	class 332nd_VEST_NCO_3: SWLB_CEE_Hazard_Vest
 	{
