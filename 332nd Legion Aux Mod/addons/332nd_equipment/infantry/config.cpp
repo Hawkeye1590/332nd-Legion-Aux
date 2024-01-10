@@ -80,7 +80,7 @@ class CfgEditorSubcategories
 class CfgWeapons
 {
 	class SWLB_clone_P2_helmet;
-	class ls_gar_arc_helmet;
+	class lsd_gar_arc_helmet;
 	class SWLB_clone_uniform;
 	class UniformItem;
 	class ItemInfo;
@@ -394,7 +394,7 @@ class CfgWeapons
                 };
 			};
 	};
-	class 332nd_GI_ARC_helmet: ls_gar_arc_helmet
+	class 332nd_GI_ARC_helmet: lsd_gar_arc_helmet
 	{
 		author="Magika";
 		scopecurator=2;
@@ -403,8 +403,8 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"\332nd_equipment\infantry\textures\ARC_helmets\332nd_ARC_Helmet.paa",
-			"ls_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
-			"ls_armor_bluefor\helmet\gar\arc\data\helmet_co.paa"
+			"lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
+			"lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa"
 		};
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.40000001;

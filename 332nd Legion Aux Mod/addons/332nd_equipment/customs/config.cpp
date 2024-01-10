@@ -15,6 +15,18 @@ class CfgPatches
 			"332nd_Riddle_Custom_P2_helmet",
 			"332nd_Sigma_Custom_P2_helmet",
 			"332nd_Hammer_Custom_P2_helmet",
+			"332nd_Print_Custom_P2_helmet",
+			"332nd_Spooks_Custom_P2_helmet",
+			"332nd_Uncle_Custom_P2_helmet",
+			"332nd_Monty_Custom_P2_helmet",
+			"332nd_Sidd_Custom_P2_helmet",
+			"332nd_Rock_Custom_P2_helmet",
+			"332nd_Mixer_Custom_P2_helmet",
+			"332nd_Kirito_Custom_P2_helmet",
+			"332nd_Mini_Custom_P2_helmet",
+			"332nd_Ginger_Custom_P2_Pilot_helmet",
+			"332nd_Shadow_Custom_P2_Pilot_helmet",
+			"332nd_Misfit_Custom_P2_SpecOps_helmet",
 			"332nd_Riddle_Custom_uniform",
 			"332nd_CR_uniform",
 			"332nd_CRC_uniform",
@@ -267,34 +279,6 @@ class CfgWeapons
                 };
 			};
 	};
-	class 332nd_Hammer_Custom_P2_helmet: SWLB_clone_P2_helmet
-	{
-		author="Magika";
-		scopecurator=2;
-		scope=2;
-		displayName="[332nd Custom] Hammer's Helmet (Phase 2)";
-		hiddenSelectionsTextures[]=
-		{
-			"\332nd_equipment\customs\textures\gi\332nd_Hammer_Helm.paa"
-		};
-		ace_hearing_protection=1;
-		ace_hearing_lowerVolume=0.40000001;
-		class HitpointsProtectionInfo
-            {
-                class Head
-                {
-                    hitPointName ="HitHead";
-                    armor=20;
-                    passThrough=0.5;
-                };
-                class Face
-                {
-                    hitPointName ="HitFace";
-                    armor=20;
-                    passThrough=0.30000001;
-                };
-			};
-	};
 	class 332nd_Monty_Custom_P2_helmet: SWLB_clone_P2_helmet
 	{
 		author="Magika";
@@ -435,6 +419,35 @@ class CfgWeapons
                 };
 			};
 	};
+	class 332nd_Mini_Custom_P2_helmet: SWLB_clone_P2_helmet
+	{
+		author="Magika";
+		scopecurator=2;
+		scope=2;
+		displayName="[332nd Custom] Mini's Helmet (Phase 2)";
+		hiddenSelectionsTextures[]=
+		{
+			"\332nd_equipment\customs\textures\gi\332nd_Mini_Helm.paa"
+		};
+		ace_hearing_protection=1;
+		ace_hearing_lowerVolume=0.40000001;
+		class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitPointName ="HitHead";
+                    armor=20;
+                    passThrough=0.5;
+                };
+                class Face
+                {
+                    hitPointName ="HitFace";
+                    armor=20;
+                    passThrough=0.30000001;
+                };
+			};
+	};
+
 	// PHASE 2 PILOT HELMS
 
 	class 332nd_Ginger_Custom_P2_Pilot_helmet: ls_gar_phase2Pilot_helmet

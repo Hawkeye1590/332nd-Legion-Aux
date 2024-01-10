@@ -162,9 +162,10 @@ class cfgWeapons
                 iconPosition[] = {0.5, 0.35};
                 iconScale = 0.2;
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                compatibleItems[] =
+                 compatibleItems[] =
                     {
-                        "332nd_cows_LRPS"};
+                        "optic_DMS",
+                        "optic_AMS"};
             };
             class MuzzleSlot : MuzzleSlot
             {
