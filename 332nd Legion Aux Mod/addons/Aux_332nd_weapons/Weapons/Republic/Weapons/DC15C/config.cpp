@@ -196,7 +196,8 @@ class cfgWeapons
                 displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
                 compatibleItems[] =
                     {
-                        "332nd_muzzle_flash"};
+                        "332nd_muzzle_flash",
+                        "332nd_Vibroknife_Bayonet"};
             };
             class PointerSlot : PointerSlot
             {

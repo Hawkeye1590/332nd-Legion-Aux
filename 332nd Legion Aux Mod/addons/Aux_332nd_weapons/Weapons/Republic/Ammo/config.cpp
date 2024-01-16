@@ -72,7 +72,7 @@ class CfgAmmo
         deflecting = 0;
         deflectionSlowDown = 0.8;
         explosive = 0;
-        effectFly = "332nd_particle_effect_blasterbolt_fly_blue";
+        effectFly="3AS_PlasmaBolt_Blue_Fly";
         fuseDistance = 0;
         hit = 16;
         icon = "";
@@ -100,7 +100,7 @@ class CfgAmmo
         minimumSafeZone = 0.1;
         minTimeToLive = 0;
         missileLockCone = 0;
-        model = "\Aux_332nd_weapons\Weapons\Ammo\data332nd_weapons_Ammo_Tracers_Medium_Blue.p3d";
+        model="\3AS\3AS_Weapons\Data\tracer_blue.p3d";
         nvLock = 0;
         nvgonly = 0;
         shootDistraction = -1;
