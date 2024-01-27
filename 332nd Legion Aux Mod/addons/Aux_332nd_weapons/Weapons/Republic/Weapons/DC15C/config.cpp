@@ -185,7 +185,9 @@ class cfgWeapons
                 compatibleItems[] =
                     {
                         "3AS_optic_acog_DC15C",
-                        "332nd_cows_reflex_optic",
+                        "OPTRE_M12_Optic",
+                        "OPTRE_M12_Optic_Green",
+                        "OPTRE_M12_Optic_Red",
                         "Optre_Recon_Sight",
                         "Optre_Recon_Sight_Red",
                         "Optre_Recon_Sight_Green"};

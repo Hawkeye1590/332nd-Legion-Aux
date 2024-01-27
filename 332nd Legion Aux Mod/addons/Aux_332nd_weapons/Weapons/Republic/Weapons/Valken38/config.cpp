@@ -1,6 +1,6 @@
 class cfgPatches
 {
-    class 332nd_Patch_DC15X
+    class 332nd_Patch_Valken38X
     {
         addonRootClass = "332nd_Patch_Weapons";
         requiredAddons[] =
@@ -10,7 +10,7 @@ class cfgPatches
         units[] = {};
         weapons[] =
             {
-                "332nd_Weaps_DC15X"};
+                "332nd_Weaps_Valken38X"};
     };
 };
 
@@ -27,28 +27,28 @@ class cfgWeapons
         class WeaponSlotsInfo;
     };
 
-    class 332nd_Weaps_DC15X : 332nd_rifle_base_stunless
+    class 332nd_Weaps_Valken38X : 332nd_rifle_base_stunless
     {
         scope = 2;
-        displayName = "[332nd] DC-15X Sniper Rifle";
-        baseWeapon = "332nd_Weaps_DC15X";
-        picture = "\MRC\JLTS\weapons\DC15X\data\ui\DC15X_ui_ca.paa";
-        model = "\MRC\JLTS\weapons\DC15X\DC15X.p3d";
-        handAnim[] = {"OFP2_ManSkeleton", "\MRC\JLTS\weapons\DC15X\anims\DC15X_handanim.rtm"};
+        displayName = "[332nd] Valken-38X Marksman Rifle";
+        baseWeapon = "332nd_Weaps_Valken38X";
+        picture="\3AS\3AS_Weapons\DC15A\Data\Textures\DC15A_Arsenal.paa";
+        model="3AS\3AS_Weapons\Valken38X\3AS_Valken38X.p3d";
+        handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\A3\Weapons_F_Mark\LongRangeRifles\DMR_02\data\Anim\DMR_02.rtm"
+		};
         recoil = "recoil_dmr_01";
         recoilProne = "recoil_single_prone_mx";
         magazines[] =
             {
-                "332nd_Weapons_Mags_40mw5"};
-        modelOptics = "\A3\Weapons_F\acc\reticle_sniper_F";
+                "332nd_Weapons_Mags_30mw20"};
+        modelOptics="3AS\3AS_Weapons\Data\3AS_2D_Optic.p3d";
         modes[] = {"Single", "aicqb", "aiclose", "aimedium", "aifar", "aiopticmode1", "aiopticmode2"};
         class Single : Single
         {
-            sounds[]=
-			{
-				"StandardSound",
-				"SilencedSound"
-			};
+            sounds[] = {"StandardSound"};
             class BaseSoundModeType
             {
                 weaponSoundEffect = "";
@@ -59,26 +59,10 @@ class cfgWeapons
             class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"MRC\JLTS\weapons\DC15X\sounds\dc15x_fire", +3db, 1, 2200};
+                begin1[] = {"\SWLW_clones_spec\sounds\DC17M_blaster_fire.wss", +3db, 1, 2200};
                 soundBegin[] = {"begin1", 1};
             };
-            class SilencedSound: BaseSoundModeType
-			{
-				weaponSoundEffect="";
-				begin1[]=
-				{
-					"\Aux_332nd_weapons\Weapons\Republic\Weapons\DC15X\sounds\dc15x_shot_silenced.wss",
-					1,
-					1.1,
-					1800
-				};
-				soundBegin[]=
-				{
-					"begin1",
-					1
-				};
-			};
-            reloadTime = 1.5;
+            reloadTime = 0.90;
             dispersion = 0.0003;
             minRange = 2;
             minRangeProbab = 0.5;
@@ -156,22 +140,26 @@ class cfgWeapons
         };
         class OpticsModes
         {
-            class Ironsights
-            {
-                opticsID = 1;
-                useModelOptics = 0;
-                opticsFlare = "true";
-                opticsPPEffects[] = {"OpticsCHAbera5", "OpticsBlur5"};
-                opticsDisablePeripherialVision = 0.67;
-                opticsZoomMin = 0.25;
-                opticsZoomMax = 1.1;
-                opticsZoomInit = 0.75;
-                memoryPointCamera = "eye";
-                visionMode[] = {};
-                distanceZoomMin = 100;
-                distanceZoomMax = 100;
-            };
-        };
+           class Ironsights
+			{
+				opticsID=1;
+				useModelOptics=0;
+				opticsFlare="true";
+				opticsPPEffects[]=
+				{
+					"OpticsCHAbera5",
+					"OpticsBlur5"
+				};
+				opticsDisablePeripherialVision=0.67000002;
+				opticsZoomMin=0.375;
+				opticsZoomMax=1.1;
+				opticsZoomInit=0.75;
+				memoryPointCamera="eye";
+				visionMode[]={};
+				distanceZoomMin=100;
+				distanceZoomMax=100;
+			};
+		};
         class WeaponSlotsInfo : WeaponSlotsInfo
         {
             class CowsSlot : CowsSlot
@@ -184,7 +172,7 @@ class cfgWeapons
                 linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
                  compatibleItems[] =
                     {
-                        "OPTRE_SRS99C_Scope"};
+                        "3AS_Optic_VK38X"};
             };
             class MuzzleSlot : MuzzleSlot
             {
@@ -192,7 +180,6 @@ class cfgWeapons
                 displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
                 compatibleItems[] =
                     {
-                        "OPTRE_M7_silencer",
                         "332nd_muzzle_flash"};
             };
             class UnderBarrelSlot : UnderBarrelSlot
@@ -202,7 +189,7 @@ class cfgWeapons
                 linkProxy = "\A3\Data_F_Mark\Proxies\Weapon_Slots\UNDERBARREL";
                 compatibleItems[] =
                     {
-                        "bipod_01_F_blk"};
+                        "3AS_Bipod_VK38X_f"};
             };
         };
     };
@@ -212,25 +199,15 @@ class CfgMagazines
 {
     class 332nd_Weapons_Mags_20mw40;
 
-    class 332nd_Weapons_Mags_40mw5 : 332nd_Weapons_Mags_20mw40
+    class 332nd_Weapons_Mags_30mw20 : 332nd_Weapons_Mags_20mw40
     {
-        displayName = "[332nd] 5Rnd 40MW Cell";
-        displayNameShort = "5Rnd 40MW";
+        displayName = "[332nd] 20Rnd 30MW Cell";
+        displayNameShort = "20Rnd 30MW";
         picture = "\Aux_332nd_weapons\Weapons\Magazines\data\332nd_icon_mag_valken38.paa";
-        count = 5;
-        ammo = "332nd_Weapons_Ammo_40mw";
+        count = 20;
+        ammo = "332nd_Weapons_Ammo_30mw";
         initSpeed = 1100;
-        descriptionShort = "DC15X High power magazine";
-        model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
-    };
-    class 332nd_Weapons_Mags_40mwemp1 : 332nd_Weapons_Mags_40mw5
-    {
-        displayName = "[332nd] 1Rnd 40MW EMP Cell";
-        displayNameShort = "1Rnd 40MW EMP";
-        picture = "\Aux_332nd_weapons\Weapons\Magazines\data\332nd_icon_mag_valken38.paa";
-        count = 1;
-        ammo = "332nd_Weapons_Ammo_40mwemp";
-        descriptionShort = "DC15X High power magazine";
+        descriptionShort = "Valken-38X Magazine";
         model = "\MRC\JLTS\weapons\DC15x\DC15x_mag.p3d";
     };
 };
@@ -239,18 +216,13 @@ class CfgAmmo
 {
     class 332nd_Weapons_Ammo_base_blue;
 
-    class 332nd_Weapons_Ammo_40mw : 332nd_Weapons_Ammo_base_blue
+    class 332nd_Weapons_Ammo_30mw : 332nd_Weapons_Ammo_base_blue
     {
-        hit = 60;
+        hit = 30;
         typicalSpeed = 1100;
-        caliber = 3.6;
+        caliber = 1.5;
         airFriction = 0;
         waterFriction = -0.009;
-    };
-    class 332nd_Weapons_Ammo_40mwemp : 332nd_Weapons_Ammo_40mw
-    {
-        hit = 0.01;
-        caliber = 1;
     };
 };
 
