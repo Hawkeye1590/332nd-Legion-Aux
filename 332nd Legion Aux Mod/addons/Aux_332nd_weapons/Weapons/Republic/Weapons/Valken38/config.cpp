@@ -56,12 +56,13 @@ class cfgWeapons
                 closure2[] = {};
                 soundClosure[] = {};
             };
-            class StandardSound : BaseSoundModeType
-            {
-                weaponSoundEffect = "";
-                begin1[] = {"\SWLW_clones_spec\sounds\DC17M_blaster_fire.wss", +3db, 1, 2200};
-                soundBegin[] = {"begin1", 1};
-            };
+            class StandardSound: BaseSoundModeType
+			{
+				soundSetShot[]=
+				{
+					"3AS_Sniper_SoundSet"
+				};
+			};
             reloadTime = 0.90;
             dispersion = 0.0003;
             minRange = 2;
