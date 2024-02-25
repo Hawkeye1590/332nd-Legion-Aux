@@ -431,44 +431,6 @@ class CfgAmmo
         ace_rearm_caliber = 0;
     };
 
-    // UGL Smoke
-    class 332nd_Weapons_Ammo_GL_smoke_white : SmokeShell
-    {
-        smokeColor[] = {1, 1, 1, 1};
-        effectsSmoke = "332nd_particle_effect_SmokeShellWhite";
-        model = "kobra\442_weapons\explosive\basic_smoke.p3d";
-    };
-    class 332nd_Weapons_Ammo_GL_smoke_purple : 332nd_Weapons_Ammo_GL_smoke_white
-    {
-        smokeColor[] = {0.4341, 0.1388, 0.41439998, 1};
-        effectsSmoke = "332nd_particle_effect_SmokePurple";
-    };
-    class 332nd_Weapons_Ammo_GL_smoke_yellow : 332nd_Weapons_Ammo_GL_smoke_white
-    {
-        smokeColor[] = {0.9883, 0.8606, 0.0719, 1};
-        effectsSmoke = "332nd_particle_effect_SmokeYellow";
-    };
-    class 332nd_Weapons_Ammo_GL_smoke_red : 332nd_Weapons_Ammo_GL_smoke_white
-    {
-        smokeColor[] = {0.8438, 0.1383, 0.1353, 1};
-        effectsSmoke = "332nd_particle_effect_SmokeRed";
-    };
-    class 332nd_Weapons_Ammo_GL_smoke_green : 332nd_Weapons_Ammo_GL_smoke_white
-    {
-        smokeColor[] = {0.1383, 0.8438, 0.1353, 1};
-        effectsSmoke = "332nd_particle_effect_SmokeGreen";
-    };
-    class 332nd_Weapons_Ammo_GL_smoke_blue : 332nd_Weapons_Ammo_GL_smoke_white
-    {
-        smokeColor[] = {0.1183, 0.1867, 1, 1};
-        effectsSmoke = "332nd_particle_effect_SmokeBlue";
-    };
-    class 332nd_Weapons_Ammo_GL_smoke_orange : 332nd_Weapons_Ammo_GL_smoke_white
-    {
-        smokeColor[] = {0.6697, 0.2275, 0.10053, 1};
-        effectsSmoke = "SmokeShellOrangeEffect";
-    };
-
     // UGL Flare
     class 332nd_Weapons_Ammo_flare_white : F_40mm_White
     {

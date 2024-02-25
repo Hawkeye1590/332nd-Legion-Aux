@@ -42,13 +42,13 @@ class CfgWeapons
             {
                 "332nd_Weapons_Mags_RGL_HE6",
                 "332nd_Weapons_Mags_RGL_AP6",
-                "332nd_Weapons_Mags_GL_smoke_white6",
-                "332nd_Weapons_Mags_GL_smoke_purple3",
-                "332nd_Weapons_Mags_GL_smoke_yellow3",
-                "332nd_Weapons_Mags_GL_smoke_red3",
-                "332nd_Weapons_Mags_GL_smoke_green3",
-                "332nd_Weapons_Mags_GL_smoke_blue3",
-                "332nd_Weapons_Mags_GL_smoke_orange3"};
+                "OPTRE_3Rnd_Smoke_Grenade_shell",
+                "OPTRE_3Rnd_SmokeYellow_Grenade_shell",
+                "OPTRE_3Rnd_SmokeRed_Grenade_shell",
+                "OPTRE_3Rnd_SmokePurple_Grenade_shell",
+                "OPTRE_3Rnd_SmokeOrange_Grenade_shell",
+                "OPTRE_3Rnd_SmokeGreen_Grenade_shell",
+                "OPTRE_3Rnd_SmokeBlue_Grenade_shell"};
         modes[] = {"Single", "close", "short", "medium"};
         class Single : Single
         {

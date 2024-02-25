@@ -738,44 +738,55 @@ class CfgWeapons
 			};
 		};
 	};
-	class 332nd_VEST_NCO_2: SWLB_clone_recon_armor
+	class 332nd_VEST_NCO_2: SWLB_clone_basic_armor
 	{
+		author="Magic";
 		displayName="[332nd] NCO Vest [2]";
 		picture="\SWLB_clones\data\ui\icon_SWLB_clone_recon_nco_armor_ca.paa";
+		model="\SWLB_clones\SWLB_clone_recon_officer_armor.p3d";
+		hiddenSelections[]=
+		{
+			"camo1",
+			"camo2"
+		};
 		hiddenSelectionsTextures[]=
 		{
 			"\SWLB_clones\data\heavy_accessories_co.paa",
 			"",
-			"\SWLB_clones\data\heavy_accessories_co.paa",
-			"\SWLB_clones\data\heavy_accessories_co.paa"
 		};
 		class ItemInfo: VestItem
+		{
+			uniformModel="\SWLB_clones\SWLB_clone_recon_officer_armor.p3d";
+			hiddenSelections[]=
 			{
+				"camo1",
+				"camo2"
+			};
 			mass=80;
 			containerClass="Supply70";
 			vestType="Rebreather";
 			class HitpointsProtectionInfo
+			{
+				class Chest
 				{
-					class Chest
-					{
-						HitpointName="HitChest";
-						armor=6;
-						PassThrough=0.30000001;
-					};
-					class Legs
-					{
-						hitpointName="HitLegs";
-						armor=6;
-						passThrough=0.30000001;
-					};
-					class Arms
-					{
-						hitpointName="HitArms";
-						armor=4;
-						passThrough=0.30000001;
-					};
+					HitpointName="HitChest";
+					armor=6;
+					PassThrough=0.30000001;
+				};
+				class Legs
+				{
+					hitpointName="HitLegs";
+					armor=6;
+					passThrough=0.30000001;
+				};
+				class Arms
+				{
+					hitpointName="HitArms";
+					armor=4;
+					passThrough=0.30000001;
 				};
 			};
+		};
 	};
 	class 332nd_VEST_NCO_3: SWLB_CEE_Hazard_Vest
 	{

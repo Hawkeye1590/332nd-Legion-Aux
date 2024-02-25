@@ -279,42 +279,6 @@ class cfgWeapons
             aiRateOfFire = 0;
             aiRateOfFireDistance = 25;
         };
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            mass = 30;
-            class CowsSlot : CowsSlot
-            {
-                displayName = "Optics Slot";
-                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
-                iconPinpoint = "Bottom";
-                iconPosition[] = {0.5, 0.35};
-                iconScale = 0.2;
-                linkProxy = "\A3\data_f\proxies\weapon_slots\TOP";
-                scope = 0;
-                compatibleItems[] =
-                    {
-                        "332nd_cows_pistol",
-                        "332nd_cows_pistol_2"};
-            };
-            class MuzzleSlot : MuzzleSlot
-            {
-                linkProxy = "\A3\data_f\proxies\weapon_slots\MUZZLE";
-                displayName = "$str_a3_cfgweapons_abr_base_f_weaponslotsinfo_muzzleslot0";
-                iconPicture = "\A3\Weapons_F\Data\UI\attachment_muzzle.paa";
-                iconPinpoint = "Center";
-                compatibleItems[] = {};
-            };
-            class PointerSlot : PointerSlot
-            {
-                compatibleItems[] =
-                    {
-                        "jlts_dc17sa_flashlight"};
-            };
-            class UnderBarrelSlot : UnderBarrelSlot
-            {
-                compatibleItems[] = {};
-            };
-        };
     };
 
     class 332nd_launcher_base : Launcher_Base_F
