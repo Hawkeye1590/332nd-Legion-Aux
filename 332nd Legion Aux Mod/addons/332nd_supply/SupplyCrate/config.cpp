@@ -199,9 +199,9 @@ class CfgVehicles
 				magazine="332nd_Weapons_Mags_20mwdp30";
 				count=40;
 			};
-			class _transport_20mw240
+			class _transport_20mw150
 			{
-				magazine="332nd_Weapons_Mags_20mw240";
+				magazine="332nd_Weapons_Mags_20mw150";
 				count=20;
 			};
 			class _transport_40mw5
@@ -209,9 +209,9 @@ class CfgVehicles
 				magazine="332nd_Weapons_Mags_40mw5";
 				count=10;
 			};
-			class _transport_50mw10
+			class _transport_50mw4
 			{
-				magazine="332nd_Weapons_Mags_50mw10";
+				magazine="332nd_Weapons_Mags_50mw4";
 				count=10;
 			};
 			class _transport_stun5

@@ -170,8 +170,9 @@ class CfgMagazines
     {
         displayName = "[332nd] 400Rnd 10MW Cell";
         displayNameShort = "400Rnd 10MW";
-        picture = "\Aux_332nd_weapons\Weapons\Magazines\data\332nd_icon_mag_z6.paa";
+        picture = "\MRC\JLTS\weapons\z6\data\ui\z6_mag_ui_ca.paa";
         count = 400;
+        mass = 20;
         ammo = "332nd_Weapons_Ammo_10mw";
         descriptionShort = "Z6 Box Magazine";
         model = "\MRC\JLTS\weapons\z6\z6_mag.p3d";

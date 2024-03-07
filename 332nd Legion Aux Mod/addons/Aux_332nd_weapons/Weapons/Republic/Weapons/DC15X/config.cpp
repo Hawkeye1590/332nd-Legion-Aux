@@ -216,8 +216,9 @@ class CfgMagazines
     {
         displayName = "[332nd] 5Rnd 40MW Cell";
         displayNameShort = "5Rnd 40MW";
-        picture = "\Aux_332nd_weapons\Weapons\Magazines\data\332nd_icon_mag_valken38.paa";
+        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
         count = 5;
+        mass = 16;
         ammo = "332nd_Weapons_Ammo_40mw";
         initSpeed = 1100;
         descriptionShort = "DC15X High power magazine";
@@ -227,7 +228,7 @@ class CfgMagazines
     {
         displayName = "[332nd] 1Rnd 40MW EMP Cell";
         displayNameShort = "1Rnd 40MW EMP";
-        picture = "\Aux_332nd_weapons\Weapons\Magazines\data\332nd_icon_mag_valken38.paa";
+        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
         count = 1;
         ammo = "332nd_Weapons_Ammo_40mwemp";
         descriptionShort = "DC15X High power magazine";

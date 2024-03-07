@@ -139,7 +139,7 @@ class CfgMagazines
         displayName = "[332nd] 20Rnd SP Magazine";
         displayNameShort = "20Rnd SP Mag";
         author = "332nd Aux Team";
-        picture = "\a3\Weapons_F_Enoch\MagazineProxies\data\UI\icon_2rnd_12gauge_slugs_CA.paa";
+        picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_mag_ui_ca.paa";
         count = 20;
         ammo = "332nd_Weapons_Ammo_shotgun_scatter";
         mass = 8;
@@ -153,7 +153,7 @@ class CfgMagazines
         scope = 2;
         displayName = "[332nd] 10Rnd UP Magazine";
         displayNameShort = "10Rnd UP Mag";
-        picture = "\Aux_332nd_weapons\Weapons\Magazines\data\332nd_icon_mag_shotgun_up.paa";
+        picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_mag_ui_ca.paa";
         count = 10;
         ammo = "332nd_Weapons_Ammo_shotgun_he";
         descriptionShort = "Unstable Plasma Magazine";
@@ -163,7 +163,7 @@ class CfgMagazines
         scope = 2;
         displayName = "[332nd] 24Rnd Slug Magazine";
         displayNameShort = "24Rnd Slug Mag";
-        picture = "\Aux_332nd_weapons\Weapons\Magazines\data\332nd_icon_mag_shotgun_slug.paa";
+        picture = "\MRC\JLTS\weapons\DP23\data\ui\DP23_mag_ui_ca.paa";
         initSpeed = 800;
         count = 24;
         ammo = "332nd_Weapons_Ammo_30mw";

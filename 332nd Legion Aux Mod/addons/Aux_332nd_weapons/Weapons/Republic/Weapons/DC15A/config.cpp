@@ -299,7 +299,7 @@ class CfgMagazines
     {
         displayName = "[332nd] 30Rnd 20MW DP Cell";
         displayNameShort = "30Rnd 20MW DP";
-        picture = "\Aux_332nd_weapons\Weapons\Magazines\data\332nd_icon_mag_dc15a_dp.paa";
+        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
         count = 30;
         ammo = "332nd_Weapons_Ammo_20mwdp";
         descriptionShort = "DC15A dense plasma magazine";
@@ -309,7 +309,7 @@ class CfgMagazines
     {
         displayName = "[332nd] 30Rnd 20MW UP Cell";
         displayNameShort = "30Rnd 20MW UP";
-        picture = "\Aux_332nd_weapons\Weapons\Magazines\data\332nd_icon_mag_dc15a_up.paa";
+        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
         count = 30;
         ammo = "332nd_Weapons_Ammo_20mwup";
         initSpeed = 900;

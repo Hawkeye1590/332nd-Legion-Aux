@@ -28,18 +28,22 @@ class cfgWeapons
     class 332nd_Weaps_RAMR : 332nd_rifle_base_stunless
     {
         scope = 2;
-        displayName = "[332nd] RAMR";
+        displayName = "[332nd] T-7 Ion Disruptor";
         baseWeapon = "332nd_Weaps_RAMR";
-        picture = "\MRC\JLTS\weapons\EPL2\data\ui\EPL2_ui_ca.paa";
-        model = "\MRC\JLTS\weapons\EPL2\EPL2.p3d";
-        handAnim[] = {"OFP2_ManSkeleton", "\MRC\JLTS\weapons\EPL2\anims\EPL2_handanim.rtm"};
+        picture="\LF_Weapon_Unit\t7\ui\t7_co.paa";
+        model="LF_Weapon_Unit\t7\t7.p3d";
+        handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"LF_Weapon_Unit\t7\anim\t7.rtm"
+		};
         magazines[] =
             {
-                "332nd_Weapons_Mags_50mw10"};
+                "332nd_Weapons_Mags_50mw4"};
         modes[] = {"Single", "AICQB", "AIClose", "AIMedium", "AIFar"};
         class Single : Single
         {
-            reloadTime = 0.24;
+            reloadTime = 2;
             sounds[] = {"StandardSound"};
             class BaseSoundModeType
             {
@@ -51,7 +55,7 @@ class cfgWeapons
             class StandardSound : BaseSoundModeType
             {
                 weaponSoundEffect = "";
-                begin1[] = {"MRC\JLTS\weapons\EPL2\sounds\EPL2_fire", 1, 1, 3000};
+                begin1[] = {"LF_Weapon_Unit\main\sounds\iond1_01.wss", 1, 1, 3000};
                 soundBegin[] = {"begin1", 1};
             };
         };
@@ -106,21 +110,76 @@ class cfgWeapons
             aiRateOfFireDistance = 450;
             requiredOpticType = 0;
         };
-        class WeaponSlotsInfo : WeaponSlotsInfo
-        {
-            class CowsSlot : CowsSlot
-            {
-                displayName = "Optics Slot";
-                iconPicture = "\A3\Weapons_F\Data\UI\attachment_top.paa";
-                iconPinpoint = "Bottom";
-                iconPosition[] = {0.5, 0.35};
-                iconScale = 0.2;
-                linkProxy = "\a3\data_f\proxies\weapon_slots\TOP";
-                scope = 0;
-                compatibleItems[] =
-                    {
-                        ""};
-            };
+        class WeaponSlotsInfo: WeaponSlotsInfo
+		{
+			mass=60;
+			class CowsSlot: Cowsslot
+			{
+				compatibleItems[]=
+				{
+					""
+				};
+			};
+		};
+		modelOptics="LF_Weapon_Unit\westarm5\westarm5optic.p3d";
+		class OpticsModes
+		{
+			class t7scope_sights
+			{
+				opticsID=1;
+				useModelOptics=0;
+				opticsPPEffects[]=
+				{
+					"Default"
+				};
+				opticsFlare=0;
+				opticsDisablePeripherialVision=0;
+				opticsZoomMin=0.25;
+				opticsZoomMax=1.25;
+				opticsZoomInit=0.75;
+				memoryPointCamera="eye";
+				visionMode[]={};
+				distanceZoomMin=200;
+				distanceZoomMax=200;
+				cameraDir="";
+			};
+			class t7scope_scpope: t7scope_sights
+			{
+				opticsID=1;
+				useModelOptics=1;
+				opticsPPEffects[]=
+				{
+					"OpticsCHAbera2",
+					"OpticsBlur3"
+				};
+				opticsZoomMin=0.0625;
+				opticsZoomMax=0.125;
+				opticsZoomInit=0.125;
+				discreteDistance[]={100,200,300,400,500,600,700,800,900,1000,1100,1200};
+				discreteDistanceInitIndex=1;
+				distanceZoomMin=300;
+				distanceZoomMax=1200;
+				discretefov[]=
+				{
+					"0.25/3",
+					"0.25/6",
+					"0.25/9",
+					"0.25/12",
+					"0.25/15",
+					"0.25/20"
+				};
+				discreteInitIndex=0;
+				memoryPointCamera="eye";
+				visionMode[]=
+				{
+					"Normal",
+					"NVG",
+					"TI"
+				};
+				opticsFlare=1;
+				opticsDisablePeripherialVision=1;
+				cameraDir="";
+			};
         };
     };
 };
@@ -129,14 +188,15 @@ class CfgMagazines
 {
     class 332nd_Weapons_Mags_40mw5;
 
-    class 332nd_Weapons_Mags_50mw10 : 332nd_Weapons_Mags_40mw5
+    class 332nd_Weapons_Mags_50mw4 : 332nd_Weapons_Mags_40mw5
     {
-        displayName = "[332nd] 10Rnd 50MW Cell";
-        displayNameShort = "10Rnd 50MW";
+        displayName = "[332nd] 4Rnd Ion Cell";
+        displayNameShort = "4Rnd Ion";
         picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
-        count = 10;
-        ammo = "332nd_Weapons_Ammo_50mw";
-        descriptionShort = "RAMR High Power magazine";
+        count = 4;
+        mass = 30;
+        ammo = "332nd_Weapons_Ammo_50mw4";
+        descriptionShort = "T-7 ION magazine";
         model = "\MRC\JLTS\weapons\DC15A\DC15A_mag.p3d";
     };
 };
@@ -145,15 +205,14 @@ class CfgAmmo
 {
     class 332nd_Weapons_Ammo_base_blue;
 
-    class 332nd_Weapons_Ammo_50mw : 332nd_Weapons_Ammo_base_blue
+    class 332nd_Weapons_Ammo_50mw4 : 332nd_Weapons_Ammo_base_blue
     {
-        hit = 300;
+        hit = 600;
         explosive = 0.5;
         typicalSpeed = 1100;
         caliber = 5;
-        model = "\Aux_332nd_weapons\Weapons\Ammo\data332nd_weapons_Ammo_Tracers_Big_Blue.p3d";
         ExplosionEffects = "3AS_ImpactPlasma";
-        craterEffects = "";
+        craterEffects = ""; 
     };
 };
 

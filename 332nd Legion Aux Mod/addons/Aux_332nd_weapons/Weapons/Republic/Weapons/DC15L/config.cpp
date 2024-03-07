@@ -39,7 +39,7 @@ class cfgWeapons
         recoil = "recoil_SMG_03";
         magazines[] =
             {
-                "332nd_Weapons_Mags_20mw240",
+                "332nd_Weapons_Mags_20mw150",
                 "332nd_Weapons_Mags_20mw40",
                 "332nd_Weapons_Mags_20mwdp30",
                 "332nd_Weapons_Mags_20mwup30"};
@@ -180,12 +180,13 @@ class CfgMagazines
 {
     class 332nd_Weapons_Mags_20mw40;
 
-    class 332nd_Weapons_Mags_20mw240 : 332nd_Weapons_Mags_20mw40
+    class 332nd_Weapons_Mags_20mw150 : 332nd_Weapons_Mags_20mw40
     {
-        displayName = "[332nd] 240Rnd 20MW Cell";
-        displayNameShort = "240Rnd 20MW";
-        picture = "\Aux_332nd_weapons\Weapons\Magazines\data\332nd_icon_mag_dc15l.paa";
-        count = 240;
+        displayName = "[332nd] 150Rnd 20MW Cell";
+        displayNameShort = "150Rnd 20MW";
+        picture = "\MRC\JLTS\weapons\z6\data\ui\z6_mag_ui_ca.paa";
+        count = 150;
+        mass = 20;
         ammo = "332nd_Weapons_Ammo_20mw";
         descriptionShort = "DC15L Box Magazine";
         model = "\MRC\JLTS\weapons\DC15S\DC15S_mag.p3d";

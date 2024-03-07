@@ -100,7 +100,7 @@ class CfgMagazines
 	{
 		displayName="[332nd] 20Rnd 20MW DP Cell";
 		displayNameShort="20Rnd 20MW DP";
-		picture="\Aux_332nd_weapons\Weapons\Republic\Magazines\data\332nd_icon_mag_dc17.paa";
+		picture = "\MRC\JLTS\weapons\DC17SA\data\ui\DC17SA_mag_ui_ca.paa";
 		count=20;
 		mass=4;
 		descriptionShort="DC17 Pistol Magazine";

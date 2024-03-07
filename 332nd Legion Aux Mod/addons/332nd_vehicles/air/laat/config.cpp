@@ -1350,7 +1350,7 @@ class CfgVehicles
 		{
 			class 332nd_Hull_CX
 			{
-				title="CX";
+				title="CX Hull";
 				submenu="Hulls";
 				decals[]=
 				{
@@ -1365,7 +1365,7 @@ class CfgVehicles
 			};
 			class 332nd_Hull_CXT
 			{
-				title="CX-T";
+				title="CX-T Hull";
 				submenu="Hulls";
 				decals[]=
 				{
@@ -1380,7 +1380,7 @@ class CfgVehicles
 			};
 			class 332nd_Hull_NCO
 			{
-				title="NCO";
+				title="NCO Hull";
 				submenu="Hulls";
 				decals[]=
 				{
@@ -1395,7 +1395,7 @@ class CfgVehicles
 			};
 			class 332nd_Wings_CX
 			{
-				title="CX";
+				title="CX Wings";
 				submenu="Wings";
 				decals[]=
 				{
@@ -1410,7 +1410,7 @@ class CfgVehicles
 			};
 			class 332nd_Wings_CXT
 			{
-				title="CX-T";
+				title="CX-T Wings";
 				submenu="Wings";
 				decals[]=
 				{
@@ -1425,7 +1425,7 @@ class CfgVehicles
 			};
 			class 332nd_Wings_NCO
 			{
-				title="NCO";
+				title="NCO Wings";
 				submenu="Wings";
 				decals[]=
 				{

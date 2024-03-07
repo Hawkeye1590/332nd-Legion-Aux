@@ -215,7 +215,7 @@ class cfgWeapons
     {
         displayName = "[332nd] DC-15C UGL";
         baseWeapon = "332nd_Weaps_DC15C_UGL";
-        picture = "\Aux_332nd_weapons\Weapons\Republic\DC15C\dc15cugl_ui.paa";
+        picture = "\Aux_332nd_weapons\Weapons\Republic\Weapons\DC15C\dc15c_ui.paa";
         model = "3AS\3AS_Weapons\DC15C\3AS_DC15C_GL.p3d";
         handAnim[] = {"OFP2_ManSkeleton", "\A3\Weapons_F_Exp\Machineguns\LMG_03\Data\Anim\LIM.rtm"};
         muzzles[] =
@@ -287,7 +287,7 @@ class CfgMagazines
     {
         displayName = "[332nd] 40Rnd 20MW Cell";
         displayNameShort = "40Rnd 20MW";
-        picture = "\Aux_332nd_weapons\Weapons\Magazines\data\332nd_icon_mag_15mw.paa";
+        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
         count = 40;
         ammo = "332nd_Weapons_Ammo_20mw";
         initSpeed = 1050;

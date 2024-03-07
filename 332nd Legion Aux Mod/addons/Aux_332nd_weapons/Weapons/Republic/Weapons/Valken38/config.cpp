@@ -204,8 +204,9 @@ class CfgMagazines
     {
         displayName = "[332nd] 20Rnd 30MW Cell";
         displayNameShort = "20Rnd 30MW";
-        picture = "\Aux_332nd_weapons\Weapons\Magazines\data\332nd_icon_mag_valken38.paa";
+        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
         count = 20;
+        mass = 12;
         ammo = "332nd_Weapons_Ammo_30mw";
         initSpeed = 1100;
         descriptionShort = "Valken-38X Magazine";

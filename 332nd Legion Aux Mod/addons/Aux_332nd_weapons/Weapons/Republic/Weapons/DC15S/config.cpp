@@ -298,7 +298,7 @@ class CfgMagazines
         displayName = "[332nd] 50Rnd 10MW Cell";
         displayNameShort = "50Rnd 10MW";
         author = "332nd Aux Team";
-        picture = "\Aux_332nd_weapons\Weapons\Magazines\data\332nd_icon_mag_dc15c.paa";
+        picture = "\MRC\JLTS\weapons\DC15A\data\ui\DC15A_mag_ui_ca.paa";
         count = 50;
         ammo = "332nd_Weapons_Ammo_10mw";
         initSpeed = 825;

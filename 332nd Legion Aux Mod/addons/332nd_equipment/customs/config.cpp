@@ -94,7 +94,7 @@ class CfgWeapons
 		displayName="[332nd Custom] Magika's Helmet (Phase 2)";
 		hiddenSelectionsTextures[]=
 		{
-			"\332nd_equipment\customs\textures\gi\332nd_Magika_Helm.paa"
+			"\332nd_equipment\customs\textures\gi\332nd_Magika_Helm_2.paa"
 		};
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.40000001;
@@ -1199,8 +1199,8 @@ class CfgVehicles
 		editorSubcategory="332nd_Categ_Customs";
 		hiddenSelectionsTextures[]=
 		{
-			"\332nd_equipment\customs\textures\gi\332nd_Magika_Upper.paa",
-			"\332nd_equipment\customs\textures\gi\332nd_Magika_Lower.paa"
+			"\332nd_equipment\customs\textures\gi\332nd_Magika_Upper_2.paa",
+			"\332nd_equipment\customs\textures\gi\332nd_Magika_Lower_2.paa"
 		};
 		linkedItems[]=
 		{
