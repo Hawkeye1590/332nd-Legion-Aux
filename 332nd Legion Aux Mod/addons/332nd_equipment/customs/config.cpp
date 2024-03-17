@@ -36,6 +36,7 @@ class CfgPatches
 			"332nd_Shadow_Custom_P2_Pilot_helmet",
 			"332nd_Misfit_Custom_P2_SpecOps_helmet",
 			"332nd_Undead_Custom_P2_SpecOps_helmet",
+			"332nd_Sigma_Custom_BARC_helmet",
 			"332nd_Riddle_Custom_uniform",
 			"332nd_Uncle_Custom_uniform",
 			"332nd_Magika_Custom_uniform",
@@ -81,6 +82,7 @@ class CfgWeapons
 	class ls_gar_phase2Pilot_helmet;
 	class SWLB_P2_SpecOps_Helmet;
 	class ls_gar_arc_helmet;
+	class ls_gar_barc_helmet;
 	class SWLB_clone_uniform;
 	class UniformItem;
 	class ItemInfo;
@@ -636,6 +638,35 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"\332nd_equipment\customs\textures\gravedigger\332nd_Undead_Helm.paa"
+		};
+		ace_hearing_protection=1;
+		ace_hearing_lowerVolume=0.40000001;
+		class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitPointName ="HitHead";
+                    armor=28;
+                    passThrough=0.5;
+                };
+                class Face
+                {
+                    hitPointName ="HitFace";
+                    armor=28;
+                    passThrough=0.30000001;
+                };
+			};
+	};
+	// BARC Helmets
+	class 332nd_Sigma_Custom_BARC_helmet: ls_gar_barc_helmet
+	{
+		displayName="[332nd Custom] Sigma's BARC Helmet";
+		scope-1;
+		model="\ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"\332nd_equipment\customs\textures\barc\332nd_Sigma_BARC_helm.paa",
+			"\332nd_equipment\customs\textures\barc\332nd_BARC_visor_blue.paa"
 		};
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.40000001;
