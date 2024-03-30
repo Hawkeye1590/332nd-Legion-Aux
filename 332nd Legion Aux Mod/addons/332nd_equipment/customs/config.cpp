@@ -32,11 +32,16 @@ class CfgPatches
 			"332nd_Brotha_Custom_P2_helmet",
 			"332nd_Sapphire_Custom_P2_helmet",
 			"332nd_Beast_Custom_P2_helmet",
+			"332nd_Cheedle_Custom_P2_helmet",
+			"332nd_Mixer_Custom_P2_ARF_helmet",
+			"332nd_Mixer_Custom_P1_ARF_helmet",
 			"332nd_Ginger_Custom_P2_Pilot_helmet",
 			"332nd_Shadow_Custom_P2_Pilot_helmet",
 			"332nd_Misfit_Custom_P2_SpecOps_helmet",
 			"332nd_Undead_Custom_P2_SpecOps_helmet",
 			"332nd_Sigma_Custom_BARC_helmet",
+			"332nd_Monty_Custom_ARC_helmet",
+			"332nd_Mini_Custom_P2_Pilot_helmet",
 			"332nd_Riddle_Custom_uniform",
 			"332nd_Uncle_Custom_uniform",
 			"332nd_Magika_Custom_uniform",
@@ -82,6 +87,8 @@ class CfgWeapons
 	class ls_gar_phase2Pilot_helmet;
 	class SWLB_P2_SpecOps_Helmet;
 	class ls_gar_arc_helmet;
+	class lsd_gar_arc_helmet;
+	class ls_gar_phase1Arf_helmet;
 	class ls_gar_barc_helmet;
 	class SWLB_clone_uniform;
 	class UniformItem;
@@ -284,34 +291,6 @@ class CfgWeapons
                 };
 			};
 	};
-	class 332nd_Monty_Custom_P2_helmet: SWLB_clone_P2_helmet
-	{
-		author="Magika";
-		scopecurator=2;
-		scope=2;
-		displayName="[332nd Custom] Monty's Helmet (Phase 2)";
-		hiddenSelectionsTextures[]=
-		{
-			"\332nd_equipment\customs\textures\gi\332nd_Monty_Helm.paa"
-		};
-		ace_hearing_protection=1;
-		ace_hearing_lowerVolume=0.40000001;
-		class HitpointsProtectionInfo
-            {
-                class Head
-                {
-                    hitPointName ="HitHead";
-                    armor=20;
-                    passThrough=0.5;
-                };
-                class Face
-                {
-                    hitPointName ="HitFace";
-                    armor=20;
-                    passThrough=0.30000001;
-                };
-			};
-	};
 	class 332nd_Sidd_Custom_P2_helmet: SWLB_clone_P2_helmet
 	{
 		author="Magika";
@@ -368,34 +347,6 @@ class CfgWeapons
                 };
 			};
 	};
-	class 332nd_Mixer_Custom_P2_helmet: SWLB_clone_P2_helmet
-	{
-		author="Magika";
-		scopecurator=2;
-		scope=2;
-		displayName="[332nd Custom] Mixer's Helmet (Phase 2)";
-		hiddenSelectionsTextures[]=
-		{
-			"\332nd_equipment\customs\textures\gi\332nd_Mixer_Helm.paa"
-		};
-		ace_hearing_protection=1;
-		ace_hearing_lowerVolume=0.40000001;
-		class HitpointsProtectionInfo
-            {
-                class Head
-                {
-                    hitPointName ="HitHead";
-                    armor=20;
-                    passThrough=0.5;
-                };
-                class Face
-                {
-                    hitPointName ="HitFace";
-                    armor=20;
-                    passThrough=0.30000001;
-                };
-			};
-	};
 	class 332nd_Kirito_Custom_P2_helmet: SWLB_clone_P2_helmet
 	{
 		author="Magika";
@@ -405,34 +356,6 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"\332nd_equipment\customs\textures\gi\332nd_Kirito_Helm.paa"
-		};
-		ace_hearing_protection=1;
-		ace_hearing_lowerVolume=0.40000001;
-		class HitpointsProtectionInfo
-            {
-                class Head
-                {
-                    hitPointName ="HitHead";
-                    armor=20;
-                    passThrough=0.5;
-                };
-                class Face
-                {
-                    hitPointName ="HitFace";
-                    armor=20;
-                    passThrough=0.30000001;
-                };
-			};
-	};
-	class 332nd_Mini_Custom_P2_helmet: SWLB_clone_P2_helmet
-	{
-		author="Magika";
-		scopecurator=2;
-		scope=2;
-		displayName="[332nd Custom] Mini's Helmet (Phase 2)";
-		hiddenSelectionsTextures[]=
-		{
-			"\332nd_equipment\customs\textures\gi\332nd_Mini_Helm.paa"
 		};
 		ace_hearing_protection=1;
 		ace_hearing_lowerVolume=0.40000001;
@@ -536,6 +459,34 @@ class CfgWeapons
                 };
 			};
 	};
+	class 332nd_Cheedle_Custom_P2_helmet: SWLB_clone_P2_helmet
+	{
+		author="Magika";
+		scopecurator=2;
+		scope=2;
+		displayName="[332nd Custom] Cheedle's Helmet (Phase 2)";
+		hiddenSelectionsTextures[]=
+		{
+			"\332nd_equipment\customs\textures\gi\332nd_Cheedle_Helm.paa"
+		};
+		ace_hearing_protection=1;
+		ace_hearing_lowerVolume=0.40000001;
+		class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitPointName ="HitHead";
+                    armor=20;
+                    passThrough=0.5;
+                };
+                class Face
+                {
+                    hitPointName ="HitFace";
+                    armor=20;
+                    passThrough=0.30000001;
+                };
+			};
+	};
 
 	// PHASE 2 PILOT HELMS
 
@@ -577,6 +528,35 @@ class CfgWeapons
 		hiddenSelectionsTextures[]=
 		{
 			"\332nd_equipment\customs\textures\pilots\332nd_Shadow_Helm.paa",
+			"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
+		};
+		ace_hearing_protection=1;
+		ace_hearing_lowerVolume=0.40000001;
+		class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitPointName ="HitHead";
+                    armor=28;
+                    passThrough=0.5;
+                };
+                class Face
+                {
+                    hitPointName ="HitFace";
+                    armor=28;
+                    passThrough=0.5;
+                };
+			};
+	};
+	class 332nd_Mini_Custom_P2_Pilot_helmet: ls_gar_phase2Pilot_helmet
+	{
+		author="Magika";
+		scopecurator=2;
+		scope=2;
+		displayName="[332nd Custom] Mini's Helmet (Phase 2)";
+		hiddenSelectionsTextures[]=
+		{
+			"\332nd_equipment\customs\textures\pilots\332nd_Mini_Helm.paa",
 			"ls_armor_bluefor\helmet\gar\phase2Pilot\data\visor_co.paa"
 		};
 		ace_hearing_protection=1;
@@ -661,7 +641,7 @@ class CfgWeapons
 	class 332nd_Sigma_Custom_BARC_helmet: ls_gar_barc_helmet
 	{
 		displayName="[332nd Custom] Sigma's BARC Helmet";
-		scope-1;
+		scope=1;
 		model="\ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
 		hiddenSelectionsTextures[]=
 		{
@@ -686,6 +666,123 @@ class CfgWeapons
                 };
 			};
 	};
+	class 332nd_Magika_Custom_BARC_helmet: ls_gar_barc_helmet
+	{
+		displayName="[332nd Custom] Magika's BARC Helmet";
+		scope=1;
+		model="\ls_armor_bluefor\helmet\gar\barc\ls_gar_barc_helmet.p3d";
+		hiddenSelectionsTextures[]=
+		{
+			"\332nd_equipment\customs\textures\barc\332nd_Magika_BARC_helm.paa",
+			"ls_armor_bluefor\helmet\gar\barc\data\visor_co.paa"
+		};
+		ace_hearing_protection=1;
+		ace_hearing_lowerVolume=0.40000001;
+		class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitPointName ="HitHead";
+                    armor=28;
+                    passThrough=0.5;
+                };
+                class Face
+                {
+                    hitPointName ="HitFace";
+                    armor=28;
+                    passThrough=0.30000001;
+                };
+			};
+	};
+
+	// ARF Helmets
+	class 332nd_Mixer_Custom_P2_ARF_helmet: ls_gar_phase1Arf_helmet
+	{
+		displayName="[332nd Custom] Mixer's Helmet (Flaps)";
+		hiddenSelectionsTextures[]=
+		{
+			"\332nd_equipment\customs\textures\arf\332nd_Mixer_helm.paa",
+			"ls_armor_bluefor\helmet\gar\arf\data\camo2_co.paa",
+			"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+		};
+		ace_hearing_protection=1;
+		ace_hearing_lowerVolume=0.40000001;
+		class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitPointName ="HitHead";
+                    armor=20;
+                    passThrough=0.5;
+                };
+                class Face
+                {
+                    hitPointName ="HitFace";
+                    armor=20;
+                    passThrough=0.30000001;
+                };
+			};
+	};
+	class 332nd_Mixer_Custom_P1_ARF_helmet: ls_gar_phase1Arf_helmet
+	{
+		displayName="[332nd Custom] Mixer's Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"\332nd_equipment\customs\textures\arf\332nd_Mixer_helm.paa",
+			"",
+			"ls_armor_bluefor\helmet\gar\arf\data\helmet_co.paa"
+		};
+		ace_hearing_protection=1;
+		ace_hearing_lowerVolume=0.40000001;
+		class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitPointName ="HitHead";
+                    armor=20;
+                    passThrough=0.5;
+                };
+                class Face
+                {
+                    hitPointName ="HitFace";
+                    armor=20;
+                    passThrough=0.30000001;
+                };
+			};
+	};
+
+	// ARC Helmets
+	class 332nd_Monty_Custom_ARC_helmet: lsd_gar_arc_helmet
+	{
+		author="Magika";
+		scopecurator=2;
+		scope=2;
+		displayName="[332nd Custom] Monty's Helmet";
+		hiddenSelectionsTextures[]=
+		{
+			"\332nd_equipment\customs\textures\arc\332nd_Monty_helm.paa",
+			"lsd_armor_bluefor\helmet\gar\arc\data\visor_co.paa",
+			"lsd_armor_bluefor\helmet\gar\arc\data\helmet_co.paa"
+		};
+		ace_hearing_protection=1;
+		ace_hearing_lowerVolume=0.40000001;
+		class HitpointsProtectionInfo
+            {
+                class Head
+                {
+                    hitPointName ="HitHead";
+                    armor=20;
+                    passThrough=0.5;
+                };
+                class Face
+                {
+                    hitPointName ="HitFace";
+                    armor=20;
+                    passThrough=0.30000001;
+                };
+			};
+	};
+
 	//Uniforms
 	class 332nd_Riddle_Custom_uniform: SWLB_clone_uniform
 	{

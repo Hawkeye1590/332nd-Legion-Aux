@@ -7,8 +7,9 @@ class CfgPatches
 		units[]=
 		{
 			"332nd_clone_backpack",
+			"332nd_clone_ammobearer_backpack",
 			"332nd_clone_engineer_backpack",
-			"332nd_clone_heavy_backpack",
+			"332nd_clone_support_backpack",
 			"332nd_clone_medic_backpack",
 			"332nd_clone_RTO_backpack",
 			"332nd_clone_RTO_Engineer_backpack",
@@ -64,7 +65,31 @@ class CfgVehicles
 		};
 		hiddenselectionstextures[]=
 		{
-			"332nd_equipment\backpacks\textures\332nd_clone_backpack_co.paa",
+			"332nd_equipment\backpacks\textures\332nd_Backpack.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
+			"",
+			""
+		};
+	};
+	class 332nd_clone_ammobearer_backpack: SWLB_clone_backpack_heavy
+	{
+		author="Hawkeye";
+		scopecurator=2;
+		scope=2;
+		displayName="[332nd] Clone Ammo Bearer Backpack";
+		maximumLoad=400;
+		hiddenSelections[]=
+		{
+			"camo1",
+			"cover",
+			"heavy",
+			"medic",
+			"RTO"
+		};
+		hiddenselectionstextures[]=
+		{
+			"332nd_equipment\backpacks\textures\332nd_Backpack_Ammo.paa",
+			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			"",
 			""
@@ -87,18 +112,18 @@ class CfgVehicles
 		};
 		hiddenselectionstextures[]=
 		{
-			"332nd_equipment\backpacks\textures\332nd_clone_engineer_backpack_co.paa",
+			"332nd_equipment\backpacks\textures\332nd_Backpack_Engineer.paa",
 			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			""
 		};
 	};
-	class 332nd_clone_heavy_backpack: SWLB_clone_backpack_heavy
+	class 332nd_clone_support_backpack: SWLB_clone_backpack_heavy
 	{
 		author="Hawkeye";
 		scopecurator=2;
 		scope=2;
-		displayName="[332nd] Clone Heavy Backpack";
+		displayName="[332nd] Clone Support Backpack";
 		maximumLoad=400;
 		hiddenSelections[]=
 		{
@@ -110,7 +135,7 @@ class CfgVehicles
 		};
 		hiddenselectionstextures[]=
 		{
-			"332nd_equipment\backpacks\textures\332nd_clone_heavy_backpack_co.paa",
+			"332nd_equipment\backpacks\textures\332nd_Backpack_Support.paa",
 			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			"\SWLB_equipment\backpacks\data\SWLB_clone_backpack_co.paa",
 			"",
@@ -135,7 +160,7 @@ class CfgVehicles
 		};
 		hiddenselectionstextures[]=
 		{
-			"332nd_equipment\backpacks\textures\332nd_clone_medic_backpack_co.paa",
+			"332nd_equipment\backpacks\textures\332nd_Backpack_Medic.paa",
 			"332nd_equipment\backpacks\textures\332nd_backpack_accessories.paa",
 			"",
 			"332nd_equipment\backpacks\textures\332nd_backpack_accessories.paa"
@@ -172,7 +197,7 @@ class CfgVehicles
 		};
 		hiddenselectionstextures[]=
 		{
-			"332nd_equipment\backpacks\textures\332nd_clone_RTO_backpack_co.paa",
+			"332nd_equipment\backpacks\textures\332nd_Backpack_RTO.paa",
 			"",
 			"",
 			"",
@@ -197,7 +222,7 @@ class CfgVehicles
 		};
 		hiddenselectionstextures[]=
 		{
-			"332nd_equipment\backpacks\textures\332nd_clone_engineer_backpack_co.paa",
+			"332nd_equipment\backpacks\textures\332nd_Backpack_Engineer.paa",
 			"",
 			"",
 			"",
@@ -222,7 +247,7 @@ class CfgVehicles
 		};
 		hiddenselectionstextures[]=
 		{
-			"332nd_equipment\backpacks\textures\332nd_clone_medic_backpack_co.paa",
+			"332nd_equipment\backpacks\textures\332nd_Backpack_Medic.paa",
 			"",
 			"",
 			"",

@@ -261,6 +261,8 @@ class cfgWeapons
     {
         displayName = "[332nd] DC-15S (Shield)";
         baseWeapon = "332nd_Weaps_DC15S_shield";
+        JLTS_hasElectronics=0;
+		JLTS_hasEMPProtection=1;
         scope = 1;
         JLTS_isShielded = 1;
         JLTS_baseWeapon = "332nd_Weaps_DC15S";

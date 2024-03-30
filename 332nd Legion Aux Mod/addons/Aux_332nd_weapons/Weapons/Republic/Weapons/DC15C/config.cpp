@@ -39,6 +39,8 @@ class cfgWeapons
         displayName = "[332nd] DC-15C Carbine";
         author = "332nd Aux Team";
         baseWeapon = "332nd_Weaps_DC15C";
+        JLTS_hasElectronics=0;
+		JLTS_hasEMPProtection=1;
         picture = "\Aux_332nd_weapons\Weapons\Republic\Weapons\DC15C\dc15c_ui.paa";
         model = "3AS\3AS_Weapons\DC15C\3AS_DC15C_f";
         handAnim[] = {"OFP2_ManSkeleton", "\3AS\3AS_Weapons\DC15C\Data\Anim\DC15C_handanim.rtm"};

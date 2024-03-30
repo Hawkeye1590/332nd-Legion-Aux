@@ -28,16 +28,29 @@ class CfgWeapons
     class 332nd_Weaps_RGL6 : 332nd_rifle_base_stunless
     {
         scope = 2;
-        displayName = "[332nd] RGL-6";
+        displayName = "[332nd] MPL-2";
         baseWeapon = "332nd_Weaps_RGL6";
-        model = "swlw_rework\rifles\gl\GL.p3d";
-        handAnim[] = {"OFP2_ManSkeleton", "\A3\Weapons_F_epa\LongRangeRifles\DMR_01\Data\Anim\dmr_01.rtm"};
-        reloadAction = "ReloadMagazine";
+        model="3as\3AS_Weapons\MPL\3AS_MPL.p3d";
+        handAnim[]=
+		{
+			"OFP2_ManSkeleton",
+			"\3AS\3AS_Weapons\MPL\data\MPLhand.rtm"
+		};
+        reloadAction="GestureReloadMX";
         picture = "\swlw_clones\rifles\gl\data\ui\GL_ui.paa";
         cameraDir = "OP_look";
         discreteinitindex = 0;
-        discretedistance[] = {100, 200, 300, 400};
-        discreteDistanceCameraPoint[] = {"OP_eye", "OP_eye2", "OP_eye3", "OP_eye4"};
+        discreteDistance[]={50,75,100,150,200,250,300};
+		discreteDistanceCameraPoint[]=
+		{
+			"OP_eye_50",
+			"OP_eye_75",
+			"OP_eye_100",
+			"OP_eye_150",
+			"OP_eye_200",
+			"OP_eye_250",
+			"OP_eye_300"
+		};
         magazines[] =
             {
                 "332nd_Weapons_Mags_RGL_HE6",
@@ -131,18 +144,18 @@ class CfgMagazines
 
     class 332nd_Weapons_Mags_RGL_HE6 : 332nd_Weapons_Mags_GL_HE3
     {
-        displayName = "[332nd] 6Rnd HE RGL Magazine";
+        displayName = "[332nd] 6Rnd HE MPL-2 Magazine";
         displayNameShort = "6Rnd HE";
         count = 6;
-        descriptionShort = "6Rnd HE RGL Grenades";
+        descriptionShort = "6Rnd HE MPL-2 Grenades";
     };
     class 332nd_Weapons_Mags_RGL_AP6 : 332nd_Weapons_Mags_GL_AP2
     {
-        displayName = "[332nd] 6Rnd AP RGL Magazine";
+        displayName = "[332nd] 6Rnd AP MPL-2 Magazine";
         displayNameShort = "6Rnd AP";
         count = 6;
         initSpeed = 80;
-        descriptionShort = "6Rnd AP RGL Grenades";
+        descriptionShort = "6Rnd AP MPL-2 Grenades";
     };
 };
 
